@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+    padding: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+
+label{
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 0 12px;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+}
+textarea {
+    padding: 12px 12px!important;
+    height: 134px!important;
+}
+input[type="checkbox"], input[type="radio"] {
+    vertical-align: middle;
+    margin: 0 0 2px 15px;
+}
+input[type="submit"] {
+    padding: 6px 12px;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #428bca;
+    transition: all ease-in-out .2s;
+}
+.back, .admin-button{
+    display: inline-block;
+    margin-top: 5px;
+    padding: 10px 5px;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #c9302c;
+    transition: all ease-in-out .2s;
+    text-decoration: none;
+}
+.admin-button{
+    background-color: #5CB85C;
+}
+input[type="file"] {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 35px;
+}
+input[type="submit"]:hover{
+    background-color: #4ca1ea;
+}
+h1, h2, h3, h4{
+    text-align: center;
+    color: #428bca;
+    text-transform: uppercase;
+}
+input:focus {
+    outline: none;
+}
+.star-red{
+    color: red;
+}
+.color{
+    vertical-align: bottom;
+    width: 50px;
+    height: 50px;
+    background: red;
+    display: inline-block;
+}
+img{
+    margin: 0 auto;
+    max-width: 100%;
+    display:inline-block;
+    text-align: center;
+}

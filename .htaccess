@@ -1,0 +1,22 @@
+#Options -Indexes FollowSymlinks
+AddDefaultCharset utf-8
+RewriteEngine On
+RewriteBase /
+
+#RewriteRule ^(.*)$ index.php
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ index.php
+
+
+
+php_value  file_uploads 1
+php_value  upload_max_filesize 1M
+php_value  post_max_size 5M
+php_value  max_file_uploads 5
